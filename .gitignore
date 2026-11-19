@@ -1,0 +1,6 @@
+# Local notes and backups never go to git.
+# Notas locais e cópias de segurança nunca vão para o git.
+dados-locais/
+CLAUDE.local.md
+*.bin
+.DS_Store
