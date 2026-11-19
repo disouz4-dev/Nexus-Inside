@@ -12,15 +12,16 @@ Não é o Nexus Modeler rodando na pedaleira. O chip é um microcontrolador, sem
 
 ```
 Família Nexus
-├── Nexus Modeler       (computador, GPL, público). Também é o EDITOR das pedaleiras.
-└── Nexus Inside        (firmware, este repositório)
+├── Nexus Modeler       (computador)
+├── Nexus Inside Editor (computador, código fechado): o EDITOR das pedaleiras
+└── Nexus Inside        (firmware, código fechado; este repositório guarda a documentação)
     ├── núcleo          motor de áudio em ponto fixo, efeitos, presets, protocolo USB
     └── mods            um por pedaleira: só o que é da placa (tela, pisantes, LEDs, codec, partições)
 ```
 
 1. **Um núcleo, vários mods.** Pedaleira nova só exige a camada da placa.
-2. **O Nexus Modeler é o editor.** Presets, capturas e IRs vão do computador para qualquer pedaleira com Nexus Inside.
-3. **Licença separada do Nexus Modeler.** O SDK do chip traz bibliotecas fechadas, que não combinam com GPL.
+2. **O Nexus Inside Editor é o editor.** Programa próprio, separado do Nexus Modeler e com o mesmo visual, para Mac, Windows e Linux. Presets, capturas e IRs vão do computador para qualquer pedaleira com Nexus Inside.
+3. **Código fechado** (decisão de 19/11/2026). O repositório é público, mas o código do firmware não é aberto.
 
 ## Fases
 
@@ -28,12 +29,11 @@ Família Nexus
 - **Fase 1.** Firmware mínimo: acende LED, escreve na tela e volta ao firmware original.
 - **Fase 2.** Áudio passando direto da entrada para a saída.
 - **Fase 3.** Captura e IR tocando.
-- **Fase 4.** Tela, pisantes, presets e o editor no Nexus Modeler.
+- **Fase 4.** Tela, pisantes, presets e o Nexus Inside Editor falando com a pedaleira.
 
 ## Decisões pendentes
 
 1. Busca do nome no INPI e no domínio.
-2. Licença do firmware.
 
 ## Riscos
 
